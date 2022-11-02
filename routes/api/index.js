@@ -3,13 +3,14 @@ const fs = require('fs');
 const uniqid = require('uniqid');
 
 
-
+//gets saved notes
 router.get('/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf-8', function(err, data) {
         res.send(data)
     })
 });
 
+//loads saved notes to the right when clicked
 router.post('/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf-8', function(err, data) {
         const notes = JSON.parse(data)
@@ -21,6 +22,7 @@ router.post('/notes', (req, res) => {
     })
 });
 
+//deletes notes using unique id
 router.delete('/notes/:id', (req, res) => {
     fs.readFile('./db/db.json', 'utf-8', function(err, data) {
         const notes = JSON.parse(data)
