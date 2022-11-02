@@ -20,14 +20,13 @@
 
   ## Images
 
-  ![image1](/notetaker-challenge-11/public/assets/images/note1.png)
-  ![image1](/notetaker-challenge-11/public/assets/images/note2.png)
+  <img src="./public/assets/images/note1.png" width=700px>
+  <img src="./public/assets/images/note2.png" width=700px>
   
   ## Installation Instructions
   npm i to install necessary packages
   npm start to run server on localhost:3001
 
-  
   ## Usage
   The app is to be used for creating, retrieving, and deleting notes and to-dos.
   This app uses the packages Express, Uniqid, and Heroku for deployment.
